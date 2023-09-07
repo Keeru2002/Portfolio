@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script&family=Fredericka+the+Great&family=Great+Vibes&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Dancing+Script&family=Fredericka+the+Great&family=Great+Vibes&family=Permanent+Marker&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    font-size: 30px;
+    color: chocolate;
+    font-size: 40px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Great Vibes', cursive;
+    
+}
+
+.sidebar{
+    background-color: beige;
+    border: 2px solid grey;
+    border-radius: 2px;
+    width: 100%;
+    position: sticky;
+    box-shadow: 3px 5px grey;
+}
+
+nav li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+nav ul{
+  display:flex ;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+    color: blueviolet;
+    font-size: 25px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul li a:hover{
+   border:2px solid rgb(186, 139, 231);
+   cursor: pointer;
+   border-radius: 5px;
+   background-color: rgb(208, 173, 241);
+}
+
+.infoContainer{
+    justify-content: space-between;
+    height: 80vh;
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+}
+
+.btn{
+  border: 2px solid grey;
+  border-radius: 12px;
+  background-color: rgb(39, 39, 227);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0 3px;
+  padding: 9px 14px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(39, 39, 227);
+}
+
+.devPic img{
+   height: 78vh;
+   border-radius: 15px;
+   
+}
+
+.devInfo{
+    display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+
+.bg{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 23px;
+    margin: 0;
+    padding: 0;
+ }
+
+ .skill{
+     text-shadow: 4px black;
+     font-size: 25px;
+ }
+
+.greet1{
+    font-size: 85px; 
+    font-family: 'Fredericka the Great', cursive; 
+}
+
+.greet4{
+ font-size: 80px;
+ font-family: 'Fredericka the Great', cursive;
+}
+
+.greet2{
+    font-size: 30px;
+}
+
+.greet3{
+    font-size: 17px;
+}
+
+
+@media (max-width:1040px){
+    .greet1 , .greet4{
+        font-size: 60px;
+    }
+    .skill{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .greet3 p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:800px){
+    .infoContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0;
+     
+    }
+    .devInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
+@media (max-width:500px){
+    .greet4{
+        font-size: 50px;
+    }
+    .devPic img{
+        height: 60vh;
+        border-radius: 15px;
+     }
+}
+
+@media (max-width:626px){
+    nav ul{
+        flex-direction: column;
+    align-items: center;
+    margin: 0 0;
+    }
+    
+    .devPic img{
+        height: 60vh;
+        border-radius: 15px;
+     }
+    
+}
+
+@media (max-width:390px ){
+    .greet4{
+        font-size: 30px;
+     }
+}
+
+@media(max-width:412px){
+    .greet4,.greet1{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:414px ){
+    .greet4{
+        font-size: 30px;
+    }
+    .greet1{
+        font-size: 25px;
+    }
+    }
+
+
+@media (max-width:540px ){
+    .greet4{
+        font-size: 30px;
+     }
+     
+}
+
+
+@media (max-width:280px ){
+    .greet1,.greet4{
+        font-size: 25px;
+     }
+    .devPic{
+        height: 65vh;
+        width: 75vw;
+        border-radius: 15px;
+    }
+}
